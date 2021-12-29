@@ -1,7 +1,7 @@
 build: 
-	docker build -t pgweb:latest .
+	docker build -t deb-pgweb:latest .
 
 run:
-	docker run -d --name pgweb -p 8081:8081 pgweb:latest
+	docker run -d --name deb-pgweb -p 8081:8081 deb-pgweb:latest
 
 all: build run 
